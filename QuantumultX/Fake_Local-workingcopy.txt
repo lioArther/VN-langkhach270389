@@ -4,7 +4,7 @@ hostname = avatar-nct.nixcdn.com,  spclient.wg.spotify.com, *.googlevideo.com, o
 ^https?:\/\/vsco\.co\/api\/subscriptions\/2.1\/user-subscriptions\/ url script-response-body langkhach/vsco.js
 
 # gyroscope
-^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ url script-response-body langkhach/langkhach/Gyroscope.vip.js
+^https:\/\/api\.gyrosco\.pe\/v1\/account\/$ url script-response-body langkhach/Gyroscope.vip.js
 
 # Termius 
 https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body langkhach/Terminus.js
