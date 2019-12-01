@@ -151,7 +151,9 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/ssl-api\.itranslateapp\.com\/accounts\/.*\/subscriptions\/verify\/ios$ url script-response-body itranslate.js
 
 #ulysses
-^https:\/\/sk\.ulysses\.app\/api\/v1\/ url script-response-body ulysses.js
+^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
+
+^https:\/\/sk\.ulysses\.app\/api\/v1\/itunes_receipt_verify$ url script-response-body ulysses.js
 
 #pre_dayone
 ;^https:\/\/dayone\.me\/api\/users$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
