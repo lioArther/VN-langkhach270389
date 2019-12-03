@@ -75,7 +75,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body l
 #Pdfexpert
 ^https:\/\/license\.pdfexpert\.com\/api\/1\.0\/pdfexpert6\/subscription\/(refresh$|check$) url script-response-body langkhach/Pdfexpert.vip.js
 
-#productive
+#productive&sleepzy
 ^https:\/\/subs\.platforms\.team\/apple\/verifyTransaction$ url script-response-body langkhach/productive.js
 
 #Musixmatch
@@ -148,7 +148,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body l
 ;^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile\/nul\/v1$ url script-response-body langkhach/url script-response-body langkhach/photoshop.js
 
 #itranslate
-^https:\/\/ssl-api\.itranslateapp\.com\/accounts\/.*\/subscriptions\/verify\/ios$ url script-response-body langkhach/itranslate.js
+^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body langkhach/itranslate.js
 
 #ulysses
 ^https:\/\/sk\.ulysses\.app\/api\/v1\/user_offers$ url request-header (\r\n)If-None-Match:.+(\r\n) request-header $1 
