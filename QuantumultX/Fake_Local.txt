@@ -147,7 +147,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 #photoshop_ipad
 ;^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile\/nul\/v1$ url script-response-body url script-response-body photoshop.js
 
-#itranslate&lingo
+#itranslate&lingo&voice&converse
 ^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body itranslate.js
 
 #ulysses
