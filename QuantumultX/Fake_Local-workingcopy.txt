@@ -144,8 +144,8 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body l
 #draft
 ^https:\/\/backend\.getdrafts\.com\/api\/.*\/verification* url script-response-body langkhach/draft.js
 
-#photoshop_ipad
-;^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile\/nul\/v1$ url script-response-body langkhach/url script-response-body langkhach/photoshop.js
+#phothop&PSexpress
+^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile url script-response-body langkhach/photoshop.js
 
 #itranslate&lingo&voice&converse
 ^https:\/\/ssl-api\.itranslateapp\.com\/.*\/subscriptions\/.*\/ios$ url script-response-body langkhach/itranslate.js
