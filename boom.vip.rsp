@@ -20,7 +20,7 @@
           "is_trial_period" : "false",
           "original_transaction_id" : "470000445785125",
           "purchase_date" : "2019-04-17 04:10:56 Etc\\/GMT",
-          "product_id" : "com.globaldelight.iBoom1YearPackDiscount",
+          "product_id" : "com.globaldelight.iBoom.LifetimeDiscountPack",
           "original_purchase_date_pst" : "2019-04-16 21:10:59 America\\/Los_Angeles",
           "original_purchase_date_ms" : "1555474259000",
           "web_order_line_item_id" : "470000137081235",
@@ -53,7 +53,7 @@
         "is_trial_period" : "false",
         "original_transaction_id" : "470000445785125",
         "purchase_date" : "2019-04-17 04:10:56 Etc\\/GMT",
-        "product_id" : "com.globaldelight.iBoom1YearPackDiscount",
+        "product_id" : "com.globaldelight.iBoom.LifetimeDiscountPack",
         "original_purchase_date_pst" : "2019-04-16 21:10:59 America\\/Los_Angeles",
         "subscription_group_identifier" : "20461753",
         "original_purchase_date_ms" : "1555474259000",
@@ -65,9 +65,9 @@
     ],
     "pending_renewal_info" : [
       {
-        "product_id" : "com.globaldelight.iBoom1YearPackDiscount",
+        "product_id" : "com.globaldelight.iBoom.LifetimeDiscountPack",
         "original_transaction_id" : "470000445785125",
-        "auto_renew_product_id" : "com.globaldelight.iBoom1YearPackDiscount",
+        "auto_renew_product_id" : "com.globaldelight.iBoom.LifetimeDiscountPack",
         "auto_renew_status" : "0"
       }
     ]

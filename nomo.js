@@ -1,0 +1,9 @@
+var obj = JSON.parse($response.body);
+
+obj= {
+ "sign": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJhbGxfYm91Z2h0X2lvc19pZHMiOltdLCJjYW5jZWxfaW9zX2lkcyI6W10sImhhc192YWxpZF9zdWJzY3JpcHRpb24iOnRydWUsInRpbWVzdGFtcCI6MTU3NTUxODUzMCwidmFsaWRhdGVkX2lvc19pZHMiOlsiYmxpbmsuYWNhZGVteS5ub21vLnJvbWEiXX0.QSaHK6c5pcoqcjzT6G3NsKnwz4zOohhVK8l1NIvEU4M8qjrekJIXY2rxDU9_JGnNTNHGahAQ_sv8RjolW4hxT2IyrxqACrwGZMzjhjDnUsOu1oQHRsrNJxqISRp_oJaHmq2XfRyY5QYomk18_-eBLYWoC1BvhYKDW8JwT5AM3XPuri5X_lUHg1hf-nYoDL-ywMXWCOYVoFc4lxMYHRebTlLrwpZyzmpouVP0xJDuuQDqBV6Kj9fOwGdoRa-zrUsdDWkvnWlH6gnvdg6-oaQ3LSctoqOn4ttpZN4buPn0IWc7F4btKPHVEuh5C-_PTgdOCgyJrPRF1KL5I1_W1u0Qag"
+};
+
+$done({body: JSON.stringify(obj)});
+
+// Descriptions
