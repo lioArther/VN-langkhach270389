@@ -87,8 +87,8 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 #mimo
 ^https:\/\/api\.getmimo\.com\/v1\/subscriptions$ url script-response-body mimo.vip.js
 
-#mojo
-^https:\/\/api\.revenuecat\.com\/v1\/receipts$ url script-response-body mojo.vip.js
+#mojo&noto
+^https:\/\/api\.revenuecat\.com\/.*\/(receipts$|subscribers) url script-response-body mojo.vip.js
 
 #Bright
 ^https:\/\/engbright\.com\/app-portal\/apple\/receipt$ url 302 https://raw.githubusercontent.com/langkhach270389/Scripting/master/Bright.rsp
