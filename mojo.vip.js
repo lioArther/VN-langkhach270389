@@ -1,6 +1,6 @@
 let obj = JSON.parse($response.body);
 let url= $request.url;
-if(url.endsWith("offerings"))
+if(url.endsWith("offerings")||url.endsWith("products"))
 {$done({})}
 else
 {
@@ -25,5 +25,3 @@ obj["subscriber"]["entitlements"]= {
     };
 }
 $done({body: JSON.stringify(obj)});
-
-// Descriptions
