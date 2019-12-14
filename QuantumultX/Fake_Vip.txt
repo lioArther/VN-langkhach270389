@@ -168,4 +168,4 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body h
 ^https:\/\/api\.shred\.app\/verifyReceipt$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/shred.js
 
 #planner5d
-^https:\/\/planner5d\.com\/api\/sets url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/planner5d.js
+^https:\/\/planner5d\.com\/api\/sets url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/planner5d.js
