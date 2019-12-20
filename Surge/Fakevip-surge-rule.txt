@@ -1,3 +1,5 @@
+#PXX
+AND,((USER-AGENT,itunesstored*), (DOMAIN-KEYWORD,-buy.itunes.apple.com))
 # Lich Van Nien 2020 (Lich Viet)
 DOMAIN,api.lichviet.org
 # QIYIVideo
