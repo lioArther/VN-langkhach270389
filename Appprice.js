@@ -1,7 +1,7 @@
 /*using surge cron*/
 
 const region = "vn"
-const appIds = ["641613694","1312014438"]
+const appIds = ["436577167","641613694","1312014438"]
 
 var cacheData = $persistentStore.read()
 if (!cacheData) {
