@@ -1,7 +1,7 @@
 /*using surge cron*/
 
 const region = "vn"
-const appIds = ["436577167","641613694","1312014438"]
+const appIds = ["1261944766","436577167","641613694","1312014438"]
 
 var cacheData = $persistentStore.read()
 if (!cacheData) {
@@ -13,7 +13,7 @@ if (!cacheData) {
 $httpClient.post('https://itunes.apple.com/lookup?id=' + appIds + "&country=" + region, function (error, response, data) {
     if (error) {
         console.log(error);
-        $notification.post("App Pricer", "Bad connection")
+        $notification.post("App Pricer", "bad connection")
         $done()
     } else {
         let appData = JSON.parse(data).results
