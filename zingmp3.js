@@ -1,2 +1,2 @@
-body = $response.body.replace(/"lastVipExpireTime":+\d{10}/g, "\"vip\":{\"expireTime\":32500966600,\"startTime\":1572527803,\"subscription\":{\"status\":1,\"expireTime\": 1869254270,\"platform\":2},\"vipType\":1}");
+body = $response.body.replace(/"lastVipExpireTime":+\d{10}/g, "\"vip\":{\"expireTime\":4101789799,\"startTime\":1572527803,\"subscription\":{\"status\":1,\"expireTime\": 4101789799,\"platform\":2},\"vipType\":1}");
 $done({body});
