@@ -1,7 +1,7 @@
 #PXX
 AND,((USER-AGENT,itunesstored*), (DOMAIN-KEYWORD,-buy.itunes.apple.com))
 #VerifyReceipt
-DOMAIN,buy.itunes.apple.com
+AND((DOMAIN,buy.itunes.apple.com), (NOT,(USER-AGENT,StoreKitUIService))
 # Lich Van Nien 2020 (Lich Viet)
 DOMAIN,api.lichviet.org
 # QIYIVideo
