@@ -136,7 +136,7 @@ https:\/\/api\.termius\.com\/api\/v3\/bulk\/account\/ url script-response-body T
 ^https:\/\/api-intl\.mr\.meitu\.com/.*/subs_offer_elg$ url script-response-body beautyplusvip.js
 
 #camera360&mix
-^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$|mix\/recovery$) url script-response-body camera360.vip.js
+^https:\/\/bmall\.camera360\.com\/api\/(iap\/check-receipt$|mix\/getinfo$) url script-response-body camera360.vip.js
 
 #zingtv
 ^https?:\/\/api\.tv\.zing\.vn\/.*/user* url script-response-body zingtvvipv1.js
