@@ -17,6 +17,6 @@ if ($request.headers['Cookie']) {
       $notification.post("Shopee  Cookie done🎉🎉", "", "")
     }
   } else {
-    $notification.post("Shopee lỗi đọc cookiee‼️", "", "Dăng nhập lại")
+    $notification.post("Shopee lỗi đọc cookiee‼️", "", "Đăng nhập lại")
   }
   $done({})
