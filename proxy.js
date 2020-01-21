@@ -1,19 +1,19 @@
 /*
-list raw example: https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt
-
+list raw example: http://spys.me/proxy.txt
 //Surge4
-http-response ^https:\/\/raw\.githubusercontent\.com\/clarketm\/proxy-list\/master\/proxy-list-raw\.txt$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/proxy.js
+http-response ^http:\/\/spys\.me\/proxy\.txt$ requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/proxy.js
 
 //
-FreeProxy = url-test, url=http://www.google.com/generate_204, policy-path=https://raw.githubusercontent.com/clarketm/proxy-list/master/proxy-list-raw.txt, update-interval=300, timeout=0, interval=0, tolerance=0
+FreeProxy = url-test, url=http://www.google.com/generate_204, policy-path=http://spys.me/proxy.txt, update-interval=3600, timeout=0, interval=0, tolerance=0
 //
-MITM: raw.githubusercontent.com
 */
 var obj= $response.body;
 var proxy= [];
-obj= obj.split("\n");
+var ip_port= /^((\d{1,3}\.){3}\d{1,3}):(\d+)$/;
+obj= obj.match(/((\d{1,3}\.){3}\d{1,3}):(\d+).+(S\s\+).+\n/g);
 for (var i = 0; i < obj.length -1; i++) {
+obj[i]= obj[i].split(ip_port);
 proxy[i]= "Proxy_" +i + " = http, " + obj[i];
 }
 //console.log(proxy);
-$done({body: proxy.toString().replace(/Proxy/g, "\nProxy").replace(/:/g, ", ")});
+$done({body: proxy.toString().replace(/,Proxy/g, "\nProxy").replace(/:/g, ", ")});
