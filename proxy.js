@@ -9,10 +9,8 @@ FreeProxy = url-test, url=http://www.google.com/generate_204, policy-path=http:/
 */
 var obj= $response.body;
 var proxy= [];
-var ip_port= /^((\d{1,3}\.){3}\d{1,3}):(\d+)$/;
 obj= obj.match(/((\d{1,3}\.){3}\d{1,3}):(\d+).+(S\s\+).+\n/g);
 for (var i = 0; i < obj.length -1; i++) {
-obj[i]= obj[i].split(ip_port);
 proxy[i]= "Proxy_" +i + " = http, " + obj[i];
 }
 //console.log(proxy);
