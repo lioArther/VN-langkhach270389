@@ -3,7 +3,6 @@ event network-changed by Tempoblink
 version: 2.1
 auther: tempoblink
 [Script]
-[Script]
 Outbound Mode = type=event,event-name=network-changed,debug=1,script-path=Outbound-changed.js
 */
 
