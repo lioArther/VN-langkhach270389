@@ -1,6 +1,6 @@
 
 
-hostname = api.memrise.com ,api.busuu.com,api-prod.languagedrops.com,*.us-east-1.amazonaws.com,duolingo-leaderboards-prod.duolingo.com
+hostname = api.memrise.com ,api.busuu.com,api-prod.languagedrops.com, %APPEND% api-prod.languagedrops.com,duolingo-leaderboards-prod.duolingo.com
 
 #Memrise
 ^https:\/\/api\.memrise\.com\/.+\/(me\/$|dashboard\/$|leaderboards\/following\/) url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/memrise.vip.js
@@ -9,12 +9,13 @@ hostname = api.memrise.com ,api.busuu.com,api-prod.languagedrops.com,*.us-east-1
 ^https:\/\/api\.busuu\.com\/users\/me* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/busuu.vip.js
 
 #drops
-^https:\/\/*\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/drops.js
-
-^https:\/\/api-prod\.languagedrops\.com\/syncPurchasesV4$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/drops.js
-
+#Drops = type=http-response,pattern=^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/drops.js,script-update-interval=0
+#^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/drops.js
 #surge
 #Drops = type=http-response,pattern=^https:\/\/api-prod\.languagedrops\.com\/syncPurchasesV4$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/drops.js
+^https:\/\/api-prod\.languagedrops\.com\/syncPurchasesV4$ url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/drops.js
+
+
 
 
 #duolingo_test
