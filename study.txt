@@ -9,7 +9,7 @@ hostname = api.memrise.com ,api.busuu.com,api-prod.languagedrops.com, %APPEND% a
 ^https:\/\/api\.busuu\.com\/users\/me* url script-response-body https://raw.githubusercontent.com/langkhach270389/Scripting/master/busuu.vip.js
 
 #drops
-#Drops = type=http-response,pattern=^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Scripting/master/drops.js,script-update-interval=0
+#Drops = type=http-response,pattern=^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$,requires-body=1,max-size=0,script-path= https://raw.githubusercontent.com/lioArther/VN-langkhach270389/master/drops.js,script-update-interval=0
 #^https:\/\/lambda\.us-east-1\.amazonaws\.com/.*/functions\/prod-4-syncPurchases\/invocations$ url script-response-body https://raw.githubusercontent.com/lioArther/VN-langkhach270389/master/drops.js
 #surge
 #Drops = type=http-response,pattern=^https:\/\/api-prod\.languagedrops\.com\/syncPurchasesV4$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/drops.js
